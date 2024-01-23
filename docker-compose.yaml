@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php56-modelo
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
